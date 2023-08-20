@@ -1,51 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors Game</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <header>
+    <header class="header">
       <h1 class="heading">Welcome To The Game - Rock, Paper, Scissors</h1>
-      <br />
-
-      <h1>
-        Round:
-        <h2 class="rounds"></h2>
-      </h1>
-
-      <p>Choose Your Fate</p>
+      <p class="subtitle">Choose Your Fate</p>
+      <h2 class="rounds">Round: <span class="rounds-number">0</span></h2>
     </header>
-    <div class="container">
-      <div class="containerChild">
-        <span class="rock">
-          <img src="rock.png" alt="Rock Icon" width="50px" />
-        </span>
-        <span class="paper">
-          <img src="paper.png" alt="Paper Icon" width="50px" />
-        </span>
-        <span class="scissors">
-          <img src="scissors.png" alt="Scissors Icon" width="50px" />
-        </span>
+
+    <div class="game-container">
+      <div class="options">
+        <div class="option rock">
+          <img src="rock.png" alt="Rock Icon" width="100" />
+        </div>
+        <div class="option paper">
+          <img src="paper.png" alt="Paper Icon" width="100" />
+        </div>
+        <div class="option scissors">
+          <img src="scissors.png" alt="Scissors Icon" width="100" />
+        </div>
       </div>
     </div>
-    <button id="refreshButton">Restart</button>
-    <div class="scoreContainer">
-      <div class="scoreBoard">
+
+    <button id="refreshButton" class="restart-button">Restart</button>
+
+    <div class="score-container">
+      <div class="score-board">
         <h3>
           you: <span class="userScore">0</span> computer:
           <span class="computerScore">0</span>
         </h3>
-        <p class="res"></p>
+        <p class="result"></p>
       </div>
     </div>
-    <div class="footerclass">
-      <footer><small>&copy; 2023 Christopher_Webdev for Odin Project</footer>
-      </small></div>
 
-    <script src="app.js">
+    <footer class="footer">
+      <small>&copy; 2023 Christopher_Webdev for Odin Project</small>
+    </footer>
 
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
